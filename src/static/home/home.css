@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body > header {
+  flex: 0 0 auto;
+  width: 686px;
+  height: 188px;
+  margin-top: 86px;
+}
+body > header > .round-group {
+  display: flex;
+  justify-content: flex-end;
+}
+body > header > .round-group > .round2 {
+  margin-left: 30px;
+}
+body > header > .round-group > button {
+  width: 90px;
+  height: 90px;
+  opacity: 0.5;
+  background: #dfe0e5;
+  border-radius: 46px;
+  border: none;
+}
+body > header > .title {
+  width: 686px;
+  height: 92px;
+  font-size: 68px;
+  font-family: SFProDisplay-Bold;
+  text-align: left;
+  color: #1b2749;
+  line-height: 82px;
+  letter-spacing: 1px;
+  padding: 0 28px 0 36px;
+  margin: 0;
+  margin-top: 6px;
+}
+body > section > .card {
+  display: flex;
+  height: 448px;
+  background: rgba(0, 0, 0, 0);
+  justify-content: space-between;
+  margin-top: 58px;
+}
+body > section > .card > .left-shadow {
+  width: 30px;
+  height: 326px;
+  background: #d8d8d8;
+  border-radius: 10px;
+  margin-left: -5px;
+  margin-top: 34px;
+}
+body > section > .card > .right-shadow {
+  width: 30px;
+  height: 326px;
+  background: #d8d8d8;
+  border-radius: 10px;
+  margin-right: -5px;
+  margin-top: 34px;
+}
+body > section > .card > img {
+  object-fit: contain;
+}
+body > section .function > .title {
+  width: 134px;
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #1b2749;
+  line-height: 44px;
+  letter-spacing: -1px;
+  padding-left: 36px;
+}
+body > section .function > .function-card {
+  display: flex;
+  flex-direction: row;
+}
+body > section .function > .function-card > .card {
+  flex: 1;
+  background: rgba(0, 0, 0, 0);
+  margin-left: -92px;
+}
+body > section .function > .function-card > .card:first-child {
+  margin-left: -20px;
+}
+body > section .transactic-history > .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 34px 0 36px;
+}
+body > section .transactic-history > .top > .title {
+  width: 288px;
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #1b2749;
+  line-height: 44px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+body > section .transactic-history > .top > .more {
+  width: 70px;
+  height: 36px;
+  font-size: 30px;
+  font-family: SFProText-Bold;
+  text-align: right;
+  color: #fa7268;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+body > section .transactic-history > ul {
+  margin: 0;
+  padding: 0;
+}
+body > section .transactic-history > ul > li {
+  padding: 20px 34px 10px 36px;
+  list-style: none;
+  width: 680px;
+  height: 74px;
+  display: flex;
+  border-bottom: 2px solid #DFE0E5;
+}
+body > section .transactic-history > ul > li > .left {
+  flex: 1;
+}
+body > section .transactic-history > ul > li > .left > .transactic-name {
+  width: 230px;
+  height: 36px;
+  font-size: 30px;
+  font-family: SFProText-Bold;
+  text-align: left;
+  color: #1b2749;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+body > section .transactic-history > ul > li > .left > .from {
+  width: 222px;
+  height: 30px;
+  font-size: 26px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #7f8592;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+body > section .transactic-history > ul > li > .right {
+  flex: 0 0 auto;
+}
+body > section .transactic-history > ul > li > .right > .amount {
+  width: 116px;
+  height: 36px;
+  font-size: 30px;
+  font-family: SFProText-Bold;
+  text-align: right;
+  color: #7f8592;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+body > footer {
+  flex: 0 0 auto;
+  height: 100px;
+}
+body > footer > .btn-list {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  text-align: center;
+}

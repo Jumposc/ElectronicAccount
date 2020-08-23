@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0 34px 0 36px;
+}
+body > header {
+  flex: 0 0 auto;
+  width: 686px;
+  margin-top: 86px;
+}
+body > header > .round-group {
+  display: flex;
+  justify-content: flex-end;
+}
+body > header > .round-group > .round2 {
+  margin-left: 30px;
+}
+body > header > .round-group > button {
+  width: 90px;
+  height: 90px;
+  opacity: 0.5;
+  background: #dfe0e5;
+  border-radius: 46px;
+  border: none;
+}
+body > header > .title {
+  width: 686px;
+  height: 92px;
+  font-size: 68px;
+  font-family: SFProDisplay-Bold;
+  text-align: left;
+  color: #1b2749;
+  line-height: 82px;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-top: 6px;
+}
+body > header > .source {
+  width: 302px;
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Semibold;
+  text-align: left;
+  color: #7f8592;
+  line-height: 44px;
+  letter-spacing: -1px;
+  margin: 46px 0 46px 14px;
+}
+body > section > .info {
+  width: 216px;
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #1b2749;
+  line-height: 44px;
+  letter-spacing: -1px;
+  margin: 48px 0;
+  display: inline-block;
+}
+body > section > .card {
+  width: 680px;
+  height: 228px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+body > section > .card > .wallet > .wallet-info {
+  position: relative;
+  padding: 36px 0 0 36px;
+}
+body > section > .card > .wallet > .wallet-info > .wallet-name {
+  width: 150px;
+  height: 36px;
+  font-size: 30px;
+  font-family: SFProText-Bold;
+  text-align: left;
+  color: #1b2749;
+  line-height: 40px;
+  letter-spacing: 0px;
+  margin-bottom: 14px;
+}
+body > section > .card > .wallet > .wallet-info > .wallet-id {
+  width: 252px;
+  height: 26px;
+  font-size: 22px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #7f8592;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 19px;
+}
+body > section > .card > .wallet > .wallet-info > .triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 16px solid #1b2749;
+  border-left: 16px solid transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 28px;
+  top: 55px;
+}
+body > section > .card > .wallet > .hr {
+  width: 680px;
+  height: 2px;
+  background-color: #dfe0e5;
+}
+body > section > .card > .wallet > .bottom {
+  font-size: 0;
+  padding: 33px 54px 0 26px;
+}
+body > section > .card > .wallet > .bottom > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+body > section > .card > .wallet > .bottom > .balance {
+  height: 30px;
+  font-size: 26px;
+  font-family: SFProText-Medium;
+  text-align: center;
+  color: #7f8592;
+  line-height: 36px;
+  letter-spacing: 0px;
+  margin-left: 24px;
+}
+body > section > .card > .wallet > .bottom > .amount {
+  width: 106px;
+  height: 30px;
+  font-size: 26px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #1b2749;
+  line-height: 36px;
+  letter-spacing: 0px;
+  float: right;
+}
+body > section > .recharge > .title {
+  width: 146px;
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Medium;
+  text-align: left;
+  color: #1b2749;
+  line-height: 44px;
+  letter-spacing: -1px;
+  margin: 96px 0 42px 0;
+}
+body > section > .recharge > .amount-title {
+  height: 120px;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid #dfe0e5;
+  padding: 42px 0 38px 0;
+  box-sizing: border-box;
+}
+body > section > .recharge > .amount-title > .text {
+  height: 40px;
+  font-size: 34px;
+  font-family: SFProText-Regular;
+  text-align: left;
+  color: #7f8592;
+  line-height: 44px;
+  letter-spacing: -1px;
+  padding: 4px 0 0 68px;
+}
+body > section > .recharge .amount-card {
+  font-size: 0;
+  margin: 78px 0 80px 0;
+}
+body > section > .recharge .amount-card > * {
+  display: inline-block;
+}
+body > section > .recharge .amount-card > .card {
+  width: 190px;
+  height: 104px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 6px 22px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 30px;
+  margin-bottom: 26px;
+}
+body > section > .recharge .amount-card > .card .amount {
+  height: 100%;
+  font-size: 30px;
+  font-family: SFProText-Medium;
+  text-align: center;
+  color: #1b2749;
+  line-height: 104px;
+  letter-spacing: 0px;
+}
+body > section > .continue {
+  width: 680px;
+  height: 100px;
+  background: #fa7268;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 78px;
+}
+body > section > .continue > .text {
+  width: 616px;
+  height: 44px;
+  font-size: 34px;
+  font-family: SFProText-Semibold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 44px;
+  letter-spacing: -1px;
+}
