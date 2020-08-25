@@ -10,6 +10,7 @@ import { LazyRouteLoader } from './components/LazyRouteLoader';
 const App = () => (
     <Router history={Global.history}>
         <LazyRouteLoader routes={[
+            { path: '/login', load: () => import('./views/LoginView/LoginView') },
             { path: '/recharge', load: () => import('./views/RechargeView/RechargeView') },
             { path: '/home', load: () => import('./views/HomeView/HomeView') },
             { path: '*', load: () => import('./views/HomeView/HomeView') },
