@@ -1,9 +1,10 @@
 import React from 'react';
+import './RechargeView.less';
 
-class Recharge extends React.Component {
+export default class RechargeView extends React.Component {
     render() {
         return (
-            <div className='Recharge'>
+            <div className='RechargeView'>
                 <header>
                     <div className="round-group">
                         <button className="round1"></button>
@@ -23,7 +24,7 @@ class Recharge extends React.Component {
                             </div>
                             <div className="hr"></div>
                             <div className="bottom">
-                                <img src="./images/Icon_Glyph_Star Copy 2@2x.png" alt="" />
+                                <img src={require("./images/Icon_Glyph_Star Copy 2@2x.png")} alt="" />
                                 <div className="balance">可用余额</div>
                                 <div className="amount">$23000</div>
                             </div>
@@ -31,39 +32,39 @@ class Recharge extends React.Component {
                     </div>
                     <div className="recharge">
                         <div className="title">充值</div>
-                        <div className="amount-title">
-                            <div className="text">金额</div>
+                        <div className="amount-input">
+                            <input type="text"/>
                         </div>
                         <div className="amount-card">
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $10
-                        </div>
+                        </button>
                             </div>
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $50
-                        </div>
+                        </button>
                             </div>
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $100
-                        </div>
+                        </button>
                             </div>
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $200
-                        </div>
+                        </button>
                             </div>
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $500
-                        </div>
+                        </button>
                             </div>
                             <div className="card">
-                                <div className="amount">
+                                <button className="amount">
                                     $1000
-                        </div>
+                        </button>
                             </div>
                         </div>
                     </div>

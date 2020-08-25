@@ -1,9 +1,10 @@
 import React from 'react';
+import './HomeView.less';
 
-class Home extends React.Component {
+export default class HomeView extends React.Component {
     render() {
         return (
-            <div className='Home'>
+            <div className='HomeView'>
                 <header>
                     <div className="round-group">
                         <button className="round1"></button>
@@ -14,20 +15,20 @@ class Home extends React.Component {
                 <section>
                     <div className="card">
                         <div className="left-shadow"></div>
-                        <img src="./images/Illus_Card 3 Copy@2x.png" alt="" />
+                        <img src={require("./images/Illus_Card 3 Copy@2x.png")} alt="" />
                         <div className="right-shadow"></div>
                     </div>
                     <div className="function">
                         <h2 className="title">操作</h2>
                         <div className="function-card">
                             <div className="card">
-                                <img src="./images//Recharge button@2x.png" alt="" />
+                                <img src={require("./images//Recharge button@2x.png")} alt="" />
                             </div>
                             <div className="card">
-                                <img src="./images/Transfer button@2x.png" alt="" />
+                                <img src={require("./images/Transfer button@2x.png")} alt="" />
                             </div>
                             <div className="card">
-                                <img src="./images//Exchange button@2x.png" alt="" />
+                                <img src={require("./images//Exchange button@2x.png")} alt="" />
                             </div>
                         </div>
                     </div>
@@ -78,7 +79,7 @@ class Home extends React.Component {
                 </section>
                 <footer>
                     <div className="btn-list">
-                        <img src="./images/Bars _ Tab Bar _ Option 1 _ 5@2x.png" alt="" />
+                        <img src={require("./images/Bars _ Tab Bar _ Option 1 _ 5@2x.png")} alt="" />
                     </div>
                 </footer>
             </div>
