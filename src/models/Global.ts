@@ -3,7 +3,7 @@ import { createBrowserHistory, createHashHistory } from 'history';
 export class Global {
 
     // 全局 History
-    static history = createHashHistory();
+    static history = createBrowserHistory();
     static get query(): { [key: string]: string | undefined } {
         let search = new URLSearchParams(this.history.location.search);
         let output: { [key: string]: string | undefined } = {};

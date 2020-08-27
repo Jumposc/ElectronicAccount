@@ -1,7 +1,20 @@
 import React from 'react';
 import './RechargeView.less';
+import { WalletData } from '../../models/Database';
 
-export default class RechargeView extends React.Component {
+export interface RechargeViewProps {
+    match: {
+        params: {
+            userId: string,
+            walletId: string
+        }
+    }
+}
+export interface HomeViewState {
+    amount:number,
+    wallet: WalletData
+}
+export default class RechargeView extends React.Component<RechargeViewProps>{
     render() {
         return (
             <div className='RechargeView'>
@@ -76,4 +89,5 @@ export default class RechargeView extends React.Component {
 
         )
     }
+
 }

@@ -1,7 +1,38 @@
 import React from 'react';
 import './HomeView.less';
+import { WalletData } from '../../models/Database';
+import { WalletUtil } from '../../models/WalletUtil';
+import { Global } from '../../models/Global';
 
-export default class HomeView extends React.Component {
+export interface HomeViewProps {
+    match: {
+        params: {
+            userId: string,
+            walletId: string
+        }
+    }
+}
+export interface HomeViewState {
+    wallet: WalletData
+}
+
+export default class HomeView extends React.Component<HomeViewProps, HomeViewState> {
+    state = {
+        wallet: {
+            id: "000000000000",
+            name:'',
+            amount: 0,
+            accessHistory: []
+        },
+    }
+    userId:number = 0;
+    componentDidMount() {
+        let walletId = this.props.match.params.walletId;
+        let userId = this.props.match.params.userId;
+        this.userId = parseInt(userId);
+        this.getWalletById(walletId);
+    }
+
     render() {
         return (
             <div className='HomeView'>
@@ -22,7 +53,7 @@ export default class HomeView extends React.Component {
                         <h2 className="title">操作</h2>
                         <div className="function-card">
                             <div className="card">
-                                <img src={require("./images//Recharge button@2x.png")} alt="" />
+                                <img src={require("./images//Recharge button@2x.png")} alt="" onClick={()=>{this.onClickRechargeBtn()}} />
                             </div>
                             <div className="card">
                                 <img src={require("./images/Transfer button@2x.png")} alt="" />
@@ -38,42 +69,19 @@ export default class HomeView extends React.Component {
                             <a className="more">更多</a>
                         </div>
                         <ul>
-                            <li>
-                                <div className="left">
-                                    <div className="transactic-name">工资转入</div>
-                                    <div className="from">来自公司</div>
-                                </div>
-                                <div className="right">
-                                    <div className="amount">+$1000</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="left">
-                                    <div className="transactic-name">工资转入</div>
-                                    <div className="from">来自公司</div>
-                                </div>
-                                <div className="right">
-                                    <div className="amount">+$1000</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="left">
-                                    <div className="transactic-name">工资转入</div>
-                                    <div className="from">来自公司</div>
-                                </div>
-                                <div className="right">
-                                    <div className="amount">+$1000</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="left">
-                                    <div className="transactic-name">工资转入</div>
-                                    <div className="from">来自公司</div>
-                                </div>
-                                <div className="right">
-                                    <div className="amount">+$1000</div>
-                                </div>
-                            </li>
+                            {this.state.wallet.accessHistory.map((v, i) => {
+                                return (
+                                    <li key={i}>
+                                        <div className="left">
+                                            <div className="transactic-name">{v.type}</div>
+                                            <div className="from">{v.from}</div>
+                                        </div>
+                                        <div className="right">
+                                            <div className="amount">{v.amount}$</div>
+                                        </div>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </section>
@@ -84,5 +92,19 @@ export default class HomeView extends React.Component {
                 </footer>
             </div>
         )
+    }
+
+    onClickRechargeBtn() {
+        let walletId = this.props.match.params.walletId;
+        let userId = this.props.match.params.userId;
+        Global.history.push(`/recharge/${userId}/${walletId}`);
+    }
+    getWalletById(id:string) {
+        WalletUtil.getWalletById(id)
+            .then(value => {
+                this.setState({
+                    wallet: value
+                })
+            }).catch(err => console.log(err.message));
     }
 }
