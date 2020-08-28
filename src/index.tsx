@@ -13,7 +13,7 @@ const App = () => (
             { path: '/login', load: () => import('./views/LoginView/LoginView') },
             { path: '/recharge/:userId/:walletId', load: () => import('./views/RechargeView/RechargeView') },
             { path: '/home/:userId/:walletId', load: () => import('./views/HomeView/HomeView') },
-            { path: '*', load: () => import('./views/HomeView/HomeView') },
+            { path: '*', load: () => import('./views/LoginView/LoginView') },
         ]} />
     </Router>
 );

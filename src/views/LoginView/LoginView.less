@@ -1,5 +1,8 @@
 .Login {
     text-align: center;
+    margin: 0 auto;
+    width: 750px;
+    overflow: hidden;
     >header {
         >.background {
             width: 811px;
@@ -8,23 +11,28 @@
             transform: rotate(45deg);
             margin: -300px 0 0 -54px;
         }
-        >.logo {
+        >.container {
             position: absolute;
-            top: 148px;
-            left: 278px;
-        }
-        .text {
-            width: 206px;
-            height: 40px;
-            font-size: 34px;
-            font-family: SFProText-Bold;
-            text-align: center;
-            color: #ffffff;
-            line-height: 44px;
-            letter-spacing: -1px;
-            position: absolute;
-            top: 290px;
-            left: 278px;
+            top: 0;
+            height: 400px;
+            >.logo {
+                position: absolute;
+                top: 148px;
+                left: 278px;
+            }
+            >.text {
+                width: 206px;
+                height: 40px;
+                font-size: 34px;
+                font-family: SFProText-Bold;
+                text-align: center;
+                color: #ffffff;
+                line-height: 44px;
+                letter-spacing: -1px;
+                position: absolute;
+                top: 290px;
+                left: 278px;
+            }
         }
     }
     >section {
@@ -113,7 +121,7 @@
             box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
             text-align: center;
             margin-top: 60px;
-            border:none;
+            border: none;
             outline: none;
             cursor: pointer;
             >.text {
